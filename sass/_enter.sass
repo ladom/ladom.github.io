@@ -1,0 +1,47 @@
+.enter
+	width: 100vw
+	height: 100vh
+	background-color: $chocoTransparent
+	color: $white
+	position: fixed
+	top: 0
+	font-family: $dosis
+	z-index: 10
+	transition: 0.5s
+	
+	h1
+		font-size: 4em
+		text-align: center
+		letter-spacing: 14px
+
+		@media (max-width: 768px)
+			letter-spacing: 2px
+			font-size: 3em
+
+	.enter__describe--it
+		font-size: 2em
+		text-align: center
+
+		@media (max-width: 768px)
+			font-size: 1.4em
+
+	.enter__flag
+		width: 40%
+		margin: 0 auto
+		display: flex
+		justify-content: space-around
+		opacity: 0
+
+		@media (max-width: 768px)
+			width: 100%
+
+		img
+			width: 1px
+			box-shadow: 0 0 10px $white
+			border-radius: 2px
+
+			&:hover
+				box-shadow: 0 0 20px $white
+
+			&:active
+				box-shadow: 0 0 5px $white
