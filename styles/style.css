@@ -368,6 +368,113 @@
   font-size: 30px;
 }
 
+#carousel {
+  margin: 0 auto;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  top: 50px;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#carousel #slides {
+  width: 100%;
+}
+
+#carousel #slides img {
+  position: absolute;
+  width: 100%;
+  max-height: auto;
+  top: 0;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+#carousel #slides img:first-child {
+  opacity: 1;
+}
+
+#controls {
+  position: absolute;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#controls div {
+  color: #fff;
+  background-color: rgba(100, 100, 100, 0.5);
+  width: 50px;
+  text-align: center;
+}
+
+#controls div:hover {
+  background-color: rgba(100, 100, 100, 0.7);
+  cursor: pointer;
+}
+
+#controls div i {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+#controls #arrowLeft {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#controls #arrowRight {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#rings {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  height: 12px;
+}
+
+#rings div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.4;
+  margin: 0 6px;
+}
+
+#rings div:hover {
+  cursor: pointer;
+}
+
 .about {
   position: relative;
   top: 50px;

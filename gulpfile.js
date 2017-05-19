@@ -29,7 +29,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task("js", function() {
-    return gulp.src(['scripts/enter.js', 'scripts/cookie01.js', 'scripts/navigation.js', 'scripts/slide.js', 'scripts/translate.js'])
+    return gulp.src(['scripts/enter.js', 'scripts/cookie01.js', 'scripts/navigation.js', 'scripts/slide.js', 'scripts/translate.js', 'scripts/carousel.js'])
         .pipe(babel({
             presets: ['es2015']
         }))

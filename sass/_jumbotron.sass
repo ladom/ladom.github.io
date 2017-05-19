@@ -23,3 +23,81 @@
 		text-align: center
 		font-family: $dosis
 		font-size: 30px
+
+#carousel
+	margin: 0 auto
+	width: 100vw
+	height: 50vh
+	position: relative
+	top: 50px
+	overflow-y: hidden
+	display: flex
+	align-items: center
+
+	#slides
+		width: 100%
+
+		img
+			position: absolute
+			width: 100%
+			max-height: auto
+			top: 0
+			margin: 0 auto
+			opacity: 0
+
+		img:first-child
+			opacity: 1
+
+#controls
+	position: absolute
+	
+	height: 50px
+	display: flex
+	justify-content: space-between
+	
+	
+
+	div
+		color: $white
+		background-color: rgba(100, 100, 100, 0.5)
+		width: 50px
+		text-align: center
+
+		&:hover
+			background-color: rgba(100, 100, 100, 0.7)
+			cursor: pointer
+
+		i
+			font-size: 40px
+			line-height: 50px
+
+	#arrowLeft
+		border-bottom-right-radius: 10px
+		border-top-right-radius: 10px
+
+	#arrowRight
+		border-bottom-left-radius: 10px
+		border-top-left-radius: 10px
+
+#rings
+	position: absolute
+	width: 100%
+	display: flex
+	justify-content: center
+	margin: 0 auto
+	height: 12px
+	
+
+	div
+		display: flex
+		height: 8px
+		width: 8px
+		border-radius: 50%
+		border: 1px solid #fff
+		background-color: rgba(255, 255, 255, 0.7)
+		opacity: 0.4
+		margin: 0 6px
+
+		&:hover
+			cursor: pointer
+
