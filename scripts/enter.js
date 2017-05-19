@@ -4,6 +4,10 @@ $(function() {
 
     const myName = document.querySelector('.enter h1');
     const flag = document.querySelector('.enter__flag');
+    const titleDescribe = document.querySelector('.enter__describe--it h2');
+
+    myName.textContent = "Andrzej Ładomirski";
+
 
     setMarginHigh();
 
@@ -43,6 +47,7 @@ $(function() {
             callback: function() {
                 $('.enter__flag').animate({ opacity: 1 }, 3000);
                 $('.enter__flag img').animate({ width: '100px' }, 3000);
+                titleDescribe.textContent = "Front-end Developer";
             }
         },
         type: 'char'

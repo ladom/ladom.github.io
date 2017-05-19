@@ -11,7 +11,7 @@
 .enter {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(41, 24, 17, 0.9);
+  background-color: rgba(70, 24, 17, 0.9);
   color: #fff;
   position: fixed;
   top: 0;
@@ -64,6 +64,10 @@
   }
 }
 
+.enter .enter__flag h2 {
+  opacity: 0;
+}
+
 .enter .enter__flag img {
   width: 1px;
   -webkit-box-shadow: 0 0 10px #fff;
@@ -84,7 +88,7 @@
 .navBar {
   width: 100vw;
   min-height: 50px;
-  background-color: #291811;
+  background-color: #461811;
   color: #fff;
   position: fixed;
   top: 0;
@@ -124,7 +128,7 @@
   border-radius: 0;
   width: 40px;
   height: 40px;
-  background-color: #291811;
+  background-color: #461811;
   outline: none;
   display: none;
   margin: 0;
@@ -238,7 +242,7 @@
 
 .navBar__body {
   float: right;
-  background-color: #291811;
+  background-color: #461811;
 }
 
 @media (max-width: 992px) {
@@ -284,7 +288,7 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-top: 1px solid #461811;
+    border-top: 1px solid #641811;
   }
 }
 
@@ -309,7 +313,7 @@
 }
 
 .navBar__body .navBar__body--list li:hover {
-  background-color: #461811;
+  background-color: #641811;
   font-size: 19px;
 }
 
@@ -481,13 +485,13 @@
   font-family: "Dosis", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .about__me--header, .about__front--header, .about__music--header, .about__hobby--header {
   width: 300px;
   height: 60px;
-  background-color: #291811;
+  background-color: #461811;
   line-height: 60px;
   padding: 10px;
   font-size: 28px;
@@ -508,11 +512,11 @@
 
 .about a {
   text-decoration: none;
-  color: #291811;
+  color: #461811;
 }
 
 .footer {
-  background-color: #291811;
+  background-color: #461811;
   color: #fff;
   font-family: "Dosis", sans-serif;
   font-size: 20px;
@@ -520,10 +524,96 @@
   position: relative;
   top: 50px;
   padding: 20px;
+  margin-top: 20px;
 }
 
 .footer a {
   text-decoration: none;
   color: #fff;
   line-height: 1.4;
+}
+
+.footer--container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .footer--container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__right h3 {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .footer__right h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.footer__flag {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .footer__flag {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+}
+
+.footer__right img {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+}
+
+.footer__right img:active {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
 }
