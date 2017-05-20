@@ -261,8 +261,9 @@
 }
 
 .flag {
-  width: 30px;
-  height: 18px;
+  width: 40px;
+  height: 20px;
+  margin: 15px auto;
 }
 
 .jumbotron {
@@ -424,15 +425,15 @@
 }
 
 .about__me--header, .about__front--header, .about__music--header, .about__hobby--header {
-  width: 300px;
-  height: 60px;
+  width: 250px;
+  height: 50px;
   background-color: #461811;
-  line-height: 60px;
-  padding: 10px;
-  font-size: 28px;
+  line-height: 50px;
+  padding: 5px;
+  font-size: 24px;
   color: #fff;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 @media (max-width: 600px) {
