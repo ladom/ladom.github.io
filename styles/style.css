@@ -451,6 +451,73 @@
   color: #461811;
 }
 
+.works {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.works__screen {
+  width: 280px;
+  height: 180px;
+  border: 2px solid #461811;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.works__screen:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .works__screen {
+    margin: 10px 0;
+  }
+}
+
+.works__screen--link {
+  width: 100%;
+  height: 100%;
+}
+
+.works__screen--link:hover {
+  cursor: pointer;
+}
+
+.works__screen--img {
+  width: 100%;
+}
+
+.works__screen--iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.about__front--gitIcon {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.about__front--gitIcon i {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.works__describe {
+  margin-top: 20px;
+}
+
 .footer {
   background-color: #461811;
   color: #fff;
