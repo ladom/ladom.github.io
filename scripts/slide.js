@@ -14,6 +14,6 @@ $('a[href^="#"]').on('click', function(event) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: target.offset().top - navSize() - 5
-        }, 2000);
+        }, 1000);
     }
 });

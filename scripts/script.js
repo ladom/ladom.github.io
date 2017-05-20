@@ -1,73 +1,5 @@
 'use strict';
 
-$(function () {
-
-    var myName = document.querySelector('.enter h1');
-    var flag = document.querySelector('.enter__flag');
-    var titleDescribe = document.querySelector('.enter__describe--it h2');
-
-    myName.textContent = "Andrzej Ładomirski";
-
-    setMarginHigh();
-
-    function setMarginTop(h) {
-        var high = window.innerHeight;
-        var width = window.innerWidth;
-        myName.style.marginTop = high / h + 'px';
-        myName.style.marginBottom = high / 8 + 'px';
-        flag.style.marginTop = high / 6 + 'px';
-    }
-
-    function setMarginHigh() {
-        var high = window.innerHeight;
-        var width = window.innerWidth;
-        if (high > width) {
-            setMarginTop(7);
-        } else {
-            setMarginTop(4);
-        }
-    }
-
-    window.addEventListener('resize', setMarginHigh);
-
-    $('.tlt').textillate({
-        selector: '.tlt',
-        loop: false,
-        minDisplayTime: 1000,
-        initialDelay: 300,
-        autoStart: true,
-        in: {
-            effect: 'rollIn',
-            delayScale: 1.3,
-            delay: 80,
-            sync: false,
-            shuffle: true,
-            reverse: false,
-            callback: function callback() {
-                $('.enter__flag').animate({ opacity: 1 }, 3000);
-                $('.enter__flag img').animate({ width: '100px' }, 3000);
-                titleDescribe.textContent = "Front-end Developer";
-            }
-        },
-        type: 'char'
-    });
-
-    $('.enter__flag--polish').click(function () {
-        $('.enter').fadeOut(800, "linear", function () {
-            $(this).addClass('hide');
-        });
-    });
-
-    $('.enter__flag--english').click(function () {
-        translateSite();
-        $('.enter').fadeOut(800, "linear", function () {
-            $(this).addClass('hide');
-        });
-    });
-});
-"use strict";
-'use strict';
-
 $(document).ready(function () {
     $('.navBar__header--menuBtn').click(function () {
         $('.navBar__header--menuBtnIcon').toggleClass('open');
@@ -96,7 +28,7 @@ $('a[href^="#"]').on('click', function (event) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: target.offset().top - navSize() - 5
-        }, 2000);
+        }, 1000);
     }
 });
 'use strict';
