@@ -378,7 +378,7 @@
   height: 50vh;
   position: relative;
   top: 50px;
-  overflow-y: hidden;
+  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -395,8 +395,6 @@
 
 #carousel #slides img {
   position: absolute;
-  width: 100%;
-  max-height: auto;
   top: 0;
   margin: 0 auto;
   opacity: 0;
@@ -408,6 +406,7 @@
 
 #controls {
   position: absolute;
+  left: 0;
   height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -417,6 +416,10 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #controls div {
@@ -448,6 +451,7 @@
 
 #rings {
   position: absolute;
+  left: 0;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
