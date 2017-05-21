@@ -12,6 +12,14 @@ function translateToPolish() {
     document.querySelector('.about__front--body p').innerHTML = 'Jestem początkującym Front-end developerem. Jak pewnie większość zaczynających swoją drogę w kodowaniu stron posiadam, całkiem niezłą moim zdaniem, znajomość HTML i CSS. W swoich projektach chętnie korzystam z rozwiązań HTML5 i CSS3. Aktualnie najbardziej zafascynowany jestem możliwościami języka JavaScript. Cieszą mnie nowe rozwiązania wprowadzone w ES6, które pozwalają mi łatwiej realizować moje założenia.<br>W celu usprawnienia pracy korzystam z automatyzatora Gulp oraz preprocesorów CSS. Moim ulubionym jest SASS i w zasadzie to jego używam najczęściej. Potrafię również korzystać z bibliotek CSS i JS, m.in. Twitter Bootstrap, jQuery, AngularJS.<br>Ciągle się uczę i codziennie odkrywam nowe możliwości i rozwiązania problemów z którymi się zmagam. Chciałbym wykorzystać moje dotychczasowe umiejętności i realizować projekty w profesjonalnym zespole programistów. Taka praca pozwoliłaby mi korzystać z doświadczenia i wiedzy współpracowników w celu dalszego rozwoju w tej dziedzinie. Myślę, że moje doświadczenia w pracy artystycznej mogą w nieoczekiwany sposób pomóc w zupełnie odmiennym spojrzeniu na problemy i zagadnienia, nad jakimi będziemy pracować.<br>Ponieważ jestem muzykiem, chciałbym zająć się tworzeniem stron i aplikacji służących do nauki i poznawania tej dziedziny sztuki. Widzę ogromne braki na rynku aplikacji edukacyjnych, służących do nauki i poznawania muzyki.<br>Jestem osobą kreatywną i zorientowaną na cel. Granie na instrumencie uczy cierpliwości i wytrwałości. Występy sceniczne sprawiają, że praca pod presją czasu i stresu jest normalnością. Łatwo podejmuję decyzje i nieustępliwie dążę do ich realizacji.';
     document.querySelector('.works__describe').textContent = "Moje przykładowe realizacje:";
 
+    document.querySelector('#atiart h3').textContent = "Strona domowa szkoły muzycznej";
+    document.querySelector('#notes h3').textContent = "Gra edukacyjna Poznaj Nuty";
+    document.querySelector('#clock h3').textContent = "Zegar JavaScript";
+    document.querySelector('#myear h3').innerHTML = "Strona Festiwalu Wyobraźni Muzycznej<br>-- w przygotowaniu --";
+    document.querySelector('#map h3').textContent = "Aktywna mapa Polski";
+    document.querySelector('#sailing h3').textContent = "Szablon strony wg layout\'u";
+
+
     document.querySelector('.about__front--git').innerHTML = 'Konto z moimi projektami na GitHub:<br><a class="about__front--gitIcon" href="https://github.com/ladom?tab=repositories" target="_blank"><i class="fa fa-github"></i><br>github.com/ladom</a>';
     document.querySelector('.about__music--header h2').textContent = "Muzyka klasyczna";
     document.querySelector('.about__music--body p').innerHTML = 'Jestem profesjonalnym skrzypkiem. Od blisko dwudziestu lat występowałem na wielu scenach w Polsce i na świecie. Przez wiele lat pracowałem też jako pedagog we wrocławskiej Akademii Muzycznej. Na swoim koncie mam nagranie kilkunastu płyt CD i DVD, setki koncertów jako solista, kameralista, czy muzyk orkiestrowy.<br>Z graniem jest jak z jazdą na rowerze - nie zapomina się tego. Dlatego też zawsze będę muzykiem i zawsze będę z radością sięgał po skrzypce.';
@@ -34,6 +42,13 @@ function translateSite() {
     document.querySelector('.about__front--body p').innerHTML = 'I\'m starting my career as a Front-end developer. As many of beginers I have good, in my opinion, knowledge of HTML and CSS. I use HTML5 and CSS3 for my projects. Currently I\'m most fascinated by the capabilities of JavaScript. I am delighted with the new ES6 solutions that make it easier for me to implement my ideas.<br>In order to streamline my work, I use the Gulp toolkit and CSS preprocessors. My favorite is SASS and in fact I use it most often. I\'m also using CSS and JS libraries e.g. Twitter Bootstrap, jQuery, AngularJS.<br>I am constantly learning and discovering new opportunities to solve my problems every day. I would like to use my existing skills and join to projects in a professional development team. Such kind of work would allow me to use the experience and knowledge of my colleagues to further develop in this field. I think my artistic experience can help in an completely unexpected way, to solve the problems and issues we will be working on.<br>Because I\'m a musician, I\'d like to work on creating websites and applications for learning this art. I see huge deficiencies in the educational applications market for learning music.<br>I am a creative and subbornly striving for purpose person. Playing on instrument teaches patience and perseverance. Stage performances make working under the pressure of time and stress normal. I make decisions easily and relentlessly pursue them.';
 
     document.querySelector('.works__describe').textContent = "My choosen works:";
+
+    document.querySelector('#atiart h3').textContent = "Home site of music school";
+    document.querySelector('#notes h3').textContent = "Education game Explore the Notes";
+    document.querySelector('#clock h3').textContent = "JavaScript clock";
+    document.querySelector('#myear h3').innerHTML = "Music Imagination Festival\'s site<br>-- in preparation --";
+    document.querySelector('#map h3').textContent = "Active map of Poland";
+    document.querySelector('#sailing h3').textContent = "Site template according to layout";
 
     document.querySelector('.about__front--git').innerHTML = 'My projects on GitHub:<br><a class="about__front--gitIcon" href="https://github.com/ladom?tab=repositories" target="_blank"><i class="fa fa-github"></i><br>github.com/ladom</a>';
     document.querySelector('.about__music--header h2').textContent = "Classical music";
