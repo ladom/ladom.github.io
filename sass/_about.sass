@@ -1,6 +1,6 @@
 .about
 	position: relative
-	top: 50px
+	top: 0
 	font-family: $dosis
 	font-size: 16px
 	line-height: 1.6
@@ -28,5 +28,22 @@
 	text-decoration: none
 	color: $choco
 
-.about__hobby
-	margin
+.about__me--img
+	width: 150px
+	height: auto
+
+	@media (max-width: 600px)
+		
+		margin: 0 auto
+	
+.about__me--container
+	width: 150px
+	float: left
+	margin-right: 20px
+
+	@media (max-width: 600px)	
+		float: none
+		margin-right: 0
+		width: 90vw
+		margin: 0 auto
+		text-align: center

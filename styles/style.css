@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis|Lato:300&subset=latin-ext");
+body {
+  padding-top: 50px;
+}
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 50px;
+  }
+}
+
 .hide {
   display: none;
 }
@@ -266,50 +282,12 @@
   margin: 15px auto;
 }
 
-.jumbotron {
-  width: 100vw;
-  height: 80vh;
-  position: relative;
-  top: 50px;
-}
-
-.jumbotron__picture {
-  width: 100%;
-  height: 80vh;
-  background-image: url("../pictures/ladomirski-main.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.jumbotron__picture .jumbotron__slogan {
-  min-width: 30vw;
-  background-color: rgba(100, 100, 100, 0.6);
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-family: "Dosis", sans-serif;
-  font-size: 30px;
-}
-
 #carousel {
   margin: 0 auto;
   width: 100vw;
   height: 50vh;
   position: relative;
-  top: 50px;
+  top: 0;
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -417,7 +395,7 @@
 
 .about {
   position: relative;
-  top: 50px;
+  top: 0;
   font-family: "Dosis", sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -449,6 +427,33 @@
 .about a {
   text-decoration: none;
   color: #461811;
+}
+
+.about__me--img {
+  width: 150px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .about__me--img {
+    margin: 0 auto;
+  }
+}
+
+.about__me--container {
+  width: 150px;
+  float: left;
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .about__me--container {
+    float: none;
+    margin-right: 0;
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .works {
@@ -591,7 +596,7 @@
   font-size: 20px;
   min-height: 50px;
   position: relative;
-  top: 50px;
+  top: 0;
   padding: 20px;
   margin-top: 20px;
 }
