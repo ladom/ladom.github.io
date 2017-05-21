@@ -491,7 +491,8 @@
 }
 
 .works__screen--img {
-  width: 100%;
+  width: 280px;
+  height: 180px;
 }
 
 .about__front--gitIcon {
