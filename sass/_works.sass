@@ -19,19 +19,12 @@
 		margin: 10px 0
 
 .works__screen--link
-	width: 100%
-	height: 100%
-
-	&:hover
-		cursor: pointer
+	width: 36px
+	height: 36px
+	display: inline-block
 
 .works__screen--img
 	width: 100%
-	
-
-.works__screen--iframe
-	width: 100%
-	height: 100%
 
 .about__front--gitIcon
 	font-size: 30px
@@ -45,4 +38,46 @@
 
 .works__describe
 	margin-top: 20px
-	
+
+.works__screen--cover
+	position: relative
+	top: -187px
+	display: flex
+	width: 280px
+	height: 180px
+	left: 0
+	justify-content: center
+	align-items: center
+	background-color: $sloganBg
+	color: $white
+	flex-direction: column
+	font-size: 18px
+	display: none
+	text-align: center
+
+.works__button
+	width: 40px
+	height: 40px
+	display: flex
+	justify-content: center
+	align-content: center
+	background-color: $chocoTransparent
+	border: 2px outset $white
+	outline: none
+	margin-top: 15px
+	padding: 0
+
+	&:hover
+		cursor: pointer
+
+	&:active
+		border: 2px inset $white
+		background-color: $chocoHover
+
+	i
+		color: $white
+		font-size: 20px
+		line-height: 36px
+
+.works__screen:hover .works__screen--cover
+	display: flex
