@@ -11,8 +11,6 @@ $(document).ready(function () {
         $('.navBar__body').toggleClass('open');
     });
 });
-'use strict';
-
 var nav = document.querySelector('nav');
 var navSize = function navSize() {
     return nav.offsetHeight;
@@ -31,8 +29,6 @@ $('a[href^="#"]').on('click', function (event) {
         }, 1000);
     }
 });
-'use strict';
-
 var flag = document.getElementById('languageBtn');
 
 function translateToPolish() {
@@ -99,8 +95,6 @@ function translateCheck() {
         translateToPolish();
     }
 }
-'use strict';
-
 $(function () {
     var lista = $('#slides img');
     var listLength = lista.length - 1;
@@ -211,8 +205,6 @@ $(function () {
         }, 5000);
     });
 });
-"use strict";
-
 function preloader() {
     if (document.images) {
         var img1 = new Image();

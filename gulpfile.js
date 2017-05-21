@@ -30,10 +30,11 @@ gulp.task('sass', function() {
 
 gulp.task("js", function() {
     return gulp.src(['scripts/navigation.js', 'scripts/slide.js', 'scripts/translate.js', 'scripts/carousel.js', 'scripts/preload.js'])
+
+    .pipe(concat('script.js'))
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(concat('script.js'))
         .pipe(gulp.dest("scripts/"))
         .pipe(browserSync.stream());
 });
