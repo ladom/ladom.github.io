@@ -5,21 +5,23 @@ var autoprefixer = require('gulp-autoprefixer');
 var watch = require('gulp-watch');
 var babel = require("gulp-babel");
 var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
+var pump = require("pump");
 
-gulp.task('serve', ['sass', 'js'], function() {
+gulp.task('serve', ['sass', 'js', 'compress'], function() {
     browserSync.init({
         server: "./"
     });
 
     gulp.watch("sass/*.sass", ['sass']);
-    gulp.watch("scripts/*.js", ['js']);
+    gulp.watch("scripts/*.js", ['js', 'compress']);
     gulp.watch("index.html").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
     return gulp.src("sass/style.sass")
         .pipe(sass({
-            outputStyle: 'expanded'
+            outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['ie >= 10', 'last 10 versions']
@@ -29,7 +31,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task("js", function() {
-    return gulp.src(['scripts/navigation.js', 'scripts/slide.js', 'scripts/translate.js', 'scripts/carousel.js', 'scripts/preload.js'])
+    return gulp.src(['scripts/navigation.js', 'scripts/slide.js', 'scripts/translate.js', 'scripts/carousel.js'])
 
     .pipe(concat('script.js'))
         .pipe(babel({
@@ -38,5 +40,16 @@ gulp.task("js", function() {
         .pipe(gulp.dest("scripts/"))
         .pipe(browserSync.stream());
 });
+
+gulp.task('compress', function(cb) {
+    pump([
+            gulp.src('scripts/script.js'),
+            uglify(),
+            gulp.dest('scripts/')
+        ],
+        cb
+    );
+});
+
 
 gulp.task('default', ['serve']);

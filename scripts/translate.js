@@ -26,7 +26,7 @@ function translateToPolish() {
     document.querySelector('.about__hobby--header h2').textContent = "Pasje";
     document.querySelector('.about__hobby--body p').innerHTML = 'Zawsze kochałem drewno. Już jako dziecko uwielbiałem spędzać godziny strugając łódki z kory, czy klejąc konstrukcje z drewnianych patyków. Z czasem zacząłem podchodzić do tego bardziej praktycznie. Cały czas amatorsko, ale z całkiem dużym powodzeniem udaje mi się tworzyć zarówno małe, drewniane drobiazgi, jak też duże konstrukcje takie jak schody, taras, czy wiata z drewna. Nieodmiennie daje mi to bardzo dużo radości i pozwala zrelaksować się i odpocząć.<br>Od kiedy pamiętam lubiłem też podróże. Jako dziecko zwiedzałem różne zakątki świata z rodzicami. Później, z racji zawodu muzyka, udało mi się odwiedzić dużą liczbę niesamowitych miejsc. Często bardzo egzotycznych i rzadko odwiedzanych przez turystów. Od jakiegoś czasu zafascynowało mnie jeżdżenie samochodem terenowym po bezdrożach. Off-road pozwala w krótkim czasie odwiedzić miejsca kiedyś dla mnie niedostępne i daje niesamowite poczucie niezależności i całkowitego oderwania od przyziemnych spraw.<br>Poza tym i wieloma innymi hobby mam to szczęście, że uwielbiam zarówno grę na skrzypcach, jak i programowanie, tak więc praca również jest dla mnie źródłem satysfakcji i radości.';
     document.querySelector('.footer__contact').textContent = "Kontakt:";
-    document.querySelector('.footer__contact--cv').href = "andrzej_ladomirski_front_cv_polish.pdf";
+    document.querySelector('.footer__contact--cv').href = "cv/andrzej_ladomirski_front_cv_polish.pdf";
 
 
 }
@@ -57,7 +57,7 @@ function translateSite() {
     document.querySelector('.about__hobby--header h2').textContent = "Passions";
     document.querySelector('.about__hobby--body p').innerHTML = 'How long I remember, I loved wood. When I was a child, I was spending hours hulling bark boats or sticking wooden constructions. Over time, I began to approach this more practically. Amateur, but with great success I manage to create small wooden trinkets, as well as large structures such as stairs in my home, terraces or terrace roof from wood. It invariably gives me a lot of fun and allows me to relax and rest.<br>Since I remember I also liked traveling. As a child I visited various parts of the world with my parents. Later, due to the music profession, I was able to visit a large number of amazing places. Often very exotic and rarely visited by tourists. For the few years, I\'m fascinated by driving off-road car. Off-road allows me to visit places that were once inaccessible and give me an incredible sense of independence and complete separation from daily affairs.<br>Besides this I\'m fortunate that I love both the violin and the programming, so the work is also a source of satisfaction and joy for me.';
     document.querySelector('.footer__contact').textContent = "Contact:";
-    document.querySelector('.footer__contact--cv').href = "andrzej_ladomirski_front_cv_english.pdf";
+    document.querySelector('.footer__contact--cv').href = "cv/andrzej_ladomirski_front_cv_english.pdf";
 
 }
 
